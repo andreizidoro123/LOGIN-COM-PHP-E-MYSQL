@@ -1,0 +1,97 @@
+body{
+    background-image: url('Road-sunset-Eclipse-beautiful-drawing_1680x1050.jpg'); 
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin-top: 90px;
+    color: white;
+    font-family: MinhaFonte;
+    font-size: 50px;
+    -webkit-user-select: none; /* Para navegadores baseados no WebKit (Chrome, Safari) */
+    -moz-user-select: none;    /* Para o Firefox */
+    -ms-user-select: none;     /* Para o Internet Explorer/Edge */
+    user-select: none;         /* Propriedade padrão */
+}
+@font-face {
+    font-family:MinhaFonte;
+    src: url('DIMIS___.TTF');
+}
+.container{
+    user-select: none;  
+    color:white;
+    border: 0.5px rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(12px); /* Aplica o efeito de desfoque no fundo */
+    border-radius: 30px;
+    border-style: solid;
+    width: 700px;
+    height: 600px;
+    text-align: center;
+    margin-left:450px;
+    margin-top: 80px;
+    box-shadow: 0 0 45px rgba(255, 255, 255, 0.349); /* Brilho vermelho ao redor */
+
+
+}
+.user{
+    color: white;
+    width: 270px;
+    margin-top:10px ;
+    padding: 8px;
+    border-radius: 40px;
+    background-color: rgba(0, 255, 255, 0);
+    border-color: rgb(240, 255, 255);
+    user-select: none;  
+}
+.user :active{
+    border:rgba(255, 255, 255, 0);
+}
+.password{
+    color: white;
+    background-color: rgba(0, 255, 255, 0);
+    border-color: rgb(240, 255, 255);
+    border-radius: 40px;
+    margin-top:40px ;
+    padding: 8px;
+    width: 270px;
+    user-select: none;  
+}
+.user input::placeholder{
+    color: white;
+}
+.remember{
+    user-select: none;  
+    color: white;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+.user::placeholder,
+.password::placeholder {
+
+    color: white;
+}
+.botao button{
+    user-select: none;  
+    height: 50px;
+    width:200px;
+    border: transparent;
+    border-radius: 100px;
+}
+.botao :hover{
+    background-color: rgb(190, 190, 190);
+    cursor:pointer;
+}
+.botao{
+    margin-top: 50px;
+}
+.registrar{
+    user-select: none;  
+    margin-top: 20px;
+}
+.esqueceu{
+    user-select: none;  
+    margin-top: 40px;
+}
+.link a:visited{
+    color:white;
+}
