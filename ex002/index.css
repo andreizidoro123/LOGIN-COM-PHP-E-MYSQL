@@ -1,0 +1,112 @@
+body {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza verticalmente */
+    margin: 0;
+}
+h2{ font-family: Arial, Helvetica, sans-serif;}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%; /* Aumenta a largura do container */
+    max-width: 600px; /* Largura máxima */
+    min-height: 400px; /* Altura mínima */
+    position: relative;
+}
+
+.trocar {
+    background-color: rgb(255, 0, 0);
+    width: 50%; /* Ajusta a largura da div "trocar" */
+    height: 100%; /* Altura total */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+.troca {
+    border-radius: 50px;
+    width: 80%; /* Ajusta a largura do botão */
+    height: 50px;
+    border: 2px solid;
+    background-color: rgb(255, 0, 0);
+    border-color:white;
+    transition: all 0.5s;
+}
+.troca:hover{
+    background-color: white;
+    color:red;
+}
+
+.trocar.right {
+    transform: translateX(100%); /* Move para a direita */
+}
+
+.formulario {
+    position: absolute;
+    left: 50%; /* Inicialmente ao lado direito da div "trocar" */
+    width: 50%; /* Ajusta a largura da div "formulario" */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.formulario.right {
+    transform: translateX(-100%); /* Mova para a esquerda */
+}
+
+input {
+    user-select: none;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid red;
+    border-radius: 50px;
+    transition: border-color 0.3s ease; /* Transição suave */
+}
+
+input:focus {
+    border-color: red; /* Altera a cor da borda para transparente ao foco */
+    outline: none; /* Remove a borda padrão do foco */
+}
+
+input::placeholder {
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animação suave */
+    opacity: 1; /* Opacidade inicial */
+    transform: translateX(0); /* Posição inicial */
+}
+
+input:focus::placeholder {
+    opacity: 0; /* Oculta o placeholder ao focar */
+    transform: translateX(-10px); /* Move um pouco para cima */
+}
+
+button {
+    user-select: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 2px solid;
+}
+button:hover{
+    border: 1px solid;
+    border-color:red;
+    background-color: white;
+    color: red;
+}
